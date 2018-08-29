@@ -58,6 +58,13 @@ app.get('/about',(req,res)=> {
   });
 });
 
+//register handler
+app.get('/projects',(req,res)=> {
+  res.render('projects.hbs',{
+    pageTitle: 'Projects'
+  });
+});
+
 app.get('/bad',(req,res)=> {
   // res.send('<h1>Hello Express</h1>');
   res.send({
